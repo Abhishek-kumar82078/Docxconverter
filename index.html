@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docxconverter</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+   
+    <div id="whole">
+    <div id="left">
+        <div class="d"></div>
+        <h1 style="padding-top: 3%;">Convert WORD to TXT/PDF/XML </h1>
+
+        <div class="drag-drop">
+            <img class="drag-drop-img" src="/image/cloud-computing.png" alt="">
+            <p class="drag-drop-tag">Click here or Drag & Drop a docx file </p>
+            <!-- <div class="drag-drop-thumb" data-label="myfile.txt"></div> -->
+            <input type="file" name="myfile" class="drag-drop-input">
+        </div>
+
+    </div>
+    <div id="right">
+        <form action="/action_page.php"></form>
+        <h1>Select Required Format</h1>
+        <div id="outer">
+        
+            <div id="one" >
+                <img src="/image/xml-new.png" alt="XML" style="height:113px; width:89px; margin-top:-8px; " > 
+                <div id="two">
+                   
+                      <input type="radio" id="XML" name="fav_language" value="XML">
+                      <label for="XML"></label><br>
+                </div>
+            </div>
+    
+
+
+            <div id="one" >
+                <img src="/image/002-pdf-file.png" alt="PDF" style="height:100px; width:99px; margin-left: 15px; "> <br>
+                <div id="two">
+                      <input type="radio" id="PDF" name="fav_language" value="PDF">
+                      <label for="PDF"></label><br>
+                </div>
+            </div>
+
+            <div id="one">
+                <img src="/image/txt-file.png" alt="TXT" style="height:107px; width:112px; margin-top:-3px; margin-left: -1px; "> <br>
+                <div id="two">
+                      <input type="radio" id="TXT" name="fav_language" value="TXT">
+                      <label for="TXT"></label><br>
+                </div>
+            </div>
+            </div>
+
+        </form>
+           
+        <div>
+            <form action="" method="POST" class="continue-button">
+                <button type="submit" > <span>Convert</span> 
+            </button>
+            </form>
+        </div>
+          <a href="loading.html">Next Page</a>
+           
+        </div>
+    </div>
+</div>
+<script src="drag_drop.js"></script>
+
+</body>
+
+</html>
