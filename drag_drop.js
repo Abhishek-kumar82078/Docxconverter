@@ -67,7 +67,7 @@ function updatethumbnail(dragDropElement,file)
      reader.readAsDataURL(file);
      reader.onload= () => {
       console.log("hi")
-       thumbnailElement.style.backgroundImage=`url('/image/docs.png')`;
+       thumbnailElement.style.backgroundImage=`url('image/docs.png')`;
      };
     }
      else
