@@ -1,37 +1,24 @@
 
 h1{
-    /* text-align: center; */
+    text-align: center;
     font-size: 3.8rem;
     font-weight: 550;
     margin-top: 2%;
-    margin-left:12%;
+    /* margin-left:12%; */
     font-family: 'Segoe UI';
     color:rgb(196, 79, 196);
 }
-h2{
-    /* text-align: center; */
-    font-size: 1.5rem;
-    margin-top: -1%;
-    font-weight: 300;
-    font-family: 'Roboto',sans-serif;
-    color:rgba(14, 1, 1, 0.747);
-    margin-left:8%;
-}
-h3{
-    font-size: 1.3rem;
-    margin-top: -1%;
-    font-weight: 300;
-    font-family: 'Roboto',sans-serif;
-    color:rgba(14, 1, 1, 0.747);
-    margin-left:8%;
-}
+
 body{
     width:100vw;
     height:100vh;
     /* background-image: linear-gradient(50deg,white 0% 45% ,violet   ); */
     background-color: white ;
-    /* font-family:Arial, Helvetica, sans-serif; */
-    overflow: hidden;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+    min-width: 450px;
     position:relative;
 }
 
@@ -55,14 +42,15 @@ body{
     width:55%;
     height:100%;
     margin-left: 4%;
+    min-width: 400px;
 }
 
 
 
 
 .drag-drop{
-    width:400px;
-    height:250px;
+    width:68%;
+    height:35%;
     border:3px dashed purple;
     border-radius: 6%;
     padding:5px;
@@ -135,15 +123,16 @@ body{
 
 #right{
     width:40%;
-    height:100%;
+    height:auto;
     margin-left: 10%;
     margin-top: 8%;
     color:white !important;
+    min-width: 400px;
 }
 #right h1{
     color:white !important;
     font-size: 2.5rem;
-    margin-left: -10%;
+    margin-left: -35%;
 }
 #right div img{
     height:100px;
@@ -156,8 +145,7 @@ body{
 
 #outer{
     display: flex;
-    margin-left: 0%;
-    margin-top: 8%;
+    padding-top: 5%;
 }
 /* HIDE RADIO */
 [type=radio] { 
@@ -179,83 +167,62 @@ body{
     /* box-shadow: 1px 1px 1px 10px rgb(238, 87, 238); */
     border-radius: 5px;
   }
-/* #one{
 
-} */
-
-/* #one img{
-  height:70px;
-  width:70px;
- margin-left:10px;
-}
-#one{
-   
-    height:auto;
-    width:auto;
-    margin:10px;
-    position: relative;
-}
-#one:hover{
-    box-shadow:1px 1px 15px 2px rgb(196, 79, 196);
-    
-}
-#two{
-   
-    width:auto;
-    position: absolute;
-    bottom: 0%;
-    margin-right: -1px;
-    
-} */
 .continue-button{
-    
-    margin-left: 13%;
-    width:76%;
+    width:100%;
     height:10%;
-    margin-top: 6%;
+    padding-left: 20%;
+    padding-top: 10%;
 }
 
 .continue-button button{
     color:rgb(196, 79, 196);
     
-    width:55%;
+    width:50%;
     height:18%;
-    margin-left:8%;
-    margin-top:8%;
-    font-size: 2.7em;
-    padding:2% 6%;
+    /* padding-left:0%; */
+    padding-top:1%;
+    font-size: 250%;
     font-weight:300;
     border-radius: 3.2rem;
     border:none;
 }
 
-.continue-button button img{
-    width:30px !important;
-    height:40px !important;
-    
-}
+
 .continue-button button:hover{
     color: white;
     background-color: rgb(196, 79, 196);
     /* border: 2px solid white; */
 }
-.Submit-button button{
-    width:60%;
-    height:18%;
-    margin-left:10%;
-    margin-top:8%;
-    font-size: 1.5em;
-    padding:3%;
-    background-color: rgb(196, 79, 196);
-    font-weight:300;
-    color:white;
-    border-radius: 3.2rem;
-    border:none;
-}
-.Submit-button button:hover{
-    /* color:hotpink; */
-    /* border:none; */
-    color: rgb(196, 79, 196);
-    background-color: white;
-    border: 2px solid rgb(196, 79, 196);
+
+@media screen and (max-width:800px) {
+    #whole{
+        flex-direction: column;
+    }
+    #right{
+        align-items: center;
+        width:80%
+    }
+    #right h1{
+        color:rgb(161, 48, 161) !important;
+        text-align: center !important;
+        margin-left: 0%;
+    }
+    #left{
+        width:80%;
+    }
+
+    #outer{
+        align-items: center;
+        padding-left: 4vw;
+    }
+    [type=radio]:checked + img {
+        background-color: rgb(223, 222, 222);
+      }
+    .continue-button button{
+        border:2px solid rgb(196, 79, 196);
+    }
+    .continue-button button:hover{
+        border-color:white;
+    }
 }
