@@ -17,7 +17,7 @@ body{
     background-image: url(image/background.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;;
+    background-attachment: fixed;
     min-width: 450px;
     position:relative;
 }
@@ -224,5 +224,27 @@ body{
     }
     .continue-button button:hover{
         border-color:white;
+    }
+}
+
+@media  screen and (min-height:700px) {
+    #left{
+        padding-top: 5%;
+        width:50%;
+    }
+    .drag-drop{
+        width:74%;
+        height:38%;
+       
+    }
+    #right{
+        padding-top: 5%;
+        /* margin-left: 1%; */
+    }
+    body{
+    background-position-x:65%;
+    }
+    #whole{
+    justify-content: space-around;
     }
 }

@@ -29,6 +29,11 @@ h3{
 body{
     overflow: hidden;
     position: relative;
+    background-color: white ;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
 }
 
 .d{
@@ -139,4 +144,8 @@ body{
     font-weight: 100;
     color:#ff62ff
     /* position: absolute; */
+}
+
+@media  screen and (min-width:700px) {
+    
 }
