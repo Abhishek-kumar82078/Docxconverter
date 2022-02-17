@@ -177,7 +177,6 @@ body{
 
 .continue-button button{
     color:rgb(196, 79, 196);
-    
     width:50%;
     height:18%;
     /* padding-left:0%; */
@@ -194,14 +193,25 @@ body{
     background-color: rgb(196, 79, 196);
     /* border: 2px solid white; */
 }
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:1040px){
+    body{
+        background-position-x: 70%;
+    }
+}
+@media screen and (max-width:890px) {
     #whole{
         flex-direction: column;
     }
+    body{
+        background-position-x: 50%;
+    }
     #right{
         align-items: center;
-        width:80%
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3%;
     }
     #right h1{
         color:rgb(161, 48, 161) !important;
@@ -214,13 +224,15 @@ body{
 
     #outer{
         align-items: center;
-        padding-left: 4vw;
+        /* padding-left: 4vw; */
     }
     [type=radio]:checked + img {
         background-color: rgb(223, 222, 222);
       }
     .continue-button button{
         border:2px solid rgb(196, 79, 196);
+        width:100%;
+        margin-left: -20%;
     }
     .continue-button button:hover{
         border-color:white;
